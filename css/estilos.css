@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Zen+Loop:ital@0;1&display=swap');
+
+@font-face {
+    font-family: "Bubbler";
+    src: url("../font/BubblerOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Chilanka";
+    src: url("../font/Chilanka-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Redes";
+    src: url("../font/Grunge-Social-Media.ttf");
+}
+
+
+.logotipo{
+    width: 75px;
+    
+}   
+
+.nav-link{
+    color: rgb(246, 246, 247);
+}
+.nav-link:hover{
+    color: rgb(120, 6, 6);
+}
+
+#quien{
+    margin-top: 5rem !important;
+}
+
+
+#mapa{
+    height: 300px;
+}
+
+#carrusel img{
+    min-width: 320px;
+
+}
+
+#titulos{
+        background: url(../imagenes/fondola.jpg);
+        background-size: 100%;
+        height: 100vh;
+
+
+        color: #fff;
+        text-align: center;
+        padding-top: 25vh;
+        width: 100%
+
+    }
+
+.row{
+        /*width: 50%;*/
+        margin: 0 auto;
+        background-color: rgba(24, 23, 23, 0.3);
+        border: 10px #fff;
+        padding: 5px;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+
+#imagenhacker{
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+
+#proyectos{
+    background: rgb(0, 0, 0);
+}
+
+
+
+/* SECCIONES NUEVAS: AFICIONES Y TRABAJO */
+.seccion-extra {
+    background: #101010;
+    color: #fff;
+}
+
+.tarjeta-aficion {
+    background: #191919;
+    border: 1px solid rgba(255,255,255,.12);
+    border-top: 3px solid #b20d19;
+    border-radius: 12px;
+    transition: transform .25s ease, border-color .25s ease;
+}
+
+.tarjeta-aficion:hover {
+    transform: translateY(-6px);
+    border-color: #dc3545;
+}
+
+.aficion-icono {
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #270609, #111);
+    font-size: 3.5rem;
+}
+
+.tarjeta-aficion .card-body {
+    padding: 1.5rem;
+    background: #191919;
+}
+
+.lista-aficiones {
+    color: #e0e0e0;
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+
+.lista-aficiones li {
+    margin-bottom: .65rem;
+}
+
+.lista-aficiones li:last-child {
+    margin-bottom: 0;
+}
+
+.seccion-trabajo {
+    background: #080808;
+}
+
+.trabajo-contenido {
+    max-width: 1100px;
+}
+
+.foto-trabajo {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.2);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+.etiqueta-trabajo {
+    color: #dc3545;
+    letter-spacing: .16em;
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+.seccion-trabajo article p {
+    color: #dedede;
+    line-height: 1.8;
+}
+
+@media (max-width: 991.98px) {
+    #titulos {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 15vh;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/* AFICIONES — composición clara de tres bloques y retrato lateral */
+.seccion-aficiones {
+    background: #f2f3f4;
+    color: #27313a;
+    padding: 4.5rem 0 3.5rem;
+    overflow: hidden;
+}
+.aficiones-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1140px;
+}
+.aficiones-principal { min-width: 0; }
+.encabezado-aficiones { margin-bottom: 2.8rem; }
+.encabezado-aficiones .sobrelinea {
+    display: block;
+    color: #78818a;
+    font-size: .82rem;
+    letter-spacing: .06em;
+    margin-bottom: .25rem;
+}
+.encabezado-aficiones h1 {
+    color: #303943;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+.linea-acento { display:block; width: 39px; height: 3px; background:#17b99b; margin-top:.55rem; }
+.aficiones-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.6rem; }
+.aficion-item { padding: .2rem 0; }
+.aficion-item .aficion-icono { height:55px; min-height:0; display:flex; align-items:center; justify-content:flex-start; background:transparent; margin-bottom:.6rem; }
+.aficion-icono svg, .trabajo-icono svg { width:42px; height:42px; fill:none; stroke:#526477; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.aficion-item h2 { color:#344252; font-size:1.05rem; font-weight:500; text-transform:uppercase; margin:0 0 .7rem; }
+.aficion-item p { color:#737b83; font-size:.88rem; line-height:1.65; margin:0; }
+.aficion-item p strong { color:#4c5864; font-weight:600; }
+.aficiones-retrato { height:300px; display:flex; align-items:flex-end; justify-content:center; }
+.retrato-aficiones { max-width:100%; max-height:300px; object-fit:contain; filter:grayscale(1); mix-blend-mode:multiply; }
+
+/* MI TRABAJO — panel informativo y portada fotográfica */
+.seccion-mi-trabajo { display:grid; grid-template-columns:1fr 1fr; min-height:610px; background:#f3f5f7; }
+.trabajo-detalles { padding:4.2rem clamp(2rem,7vw,7rem); display:flex; flex-direction:column; justify-content:center; }
+.trabajo-tabs { display:flex; gap:2rem; margin:0 0 2.4rem; color:#202a35; font-size:.76rem; letter-spacing:.12em; font-weight:600; }
+.trabajo-tabs span { padding-bottom:.5rem; }
+.trabajo-tabs .activo { border-bottom:1px solid #b9c0c6; }
+.detalle-trabajo { display:grid; grid-template-columns:52px minmax(0,1fr); gap:1.2rem; align-items:start; margin-bottom:2rem; }
+.detalle-trabajo:last-child { margin-bottom:0; }
+.trabajo-icono { padding-top:.15rem; }
+.trabajo-icono svg { width:42px; height:42px; stroke:#202a35; }
+.detalle-trabajo h2 { color:#18212b; font-size:1rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; margin:0 0 .65rem; }
+.detalle-trabajo h2::after { content:""; display:block; width:34px; height:1px; background:#d9dde1; margin-top:.8rem; }
+.detalle-trabajo p { color:#59636e; font-size:.9rem; line-height:1.65; margin:0; max-width:390px; }
+.trabajo-portada { position:relative; display:flex; align-items:center; justify-content:center; min-height:610px; background:linear-gradient(rgba(12,12,12,.68),rgba(12,12,12,.68)),url('../imagenes/parrilla.jpg') center/cover no-repeat; }
+.trabajo-portada-texto { color:#fff; text-align:left; width:min(78%,480px); }
+.trabajo-portada-texto span { font-size:.72rem; letter-spacing:.15em; color:#e1e1e1; }
+.trabajo-portada-texto h1 { font-size:2.6rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; margin:.7rem 0 .5rem; }
+.trabajo-portada-texto i { display:block; width:44px; height:1px; background:rgba(255,255,255,.65); margin:1rem 0 1.4rem; }
+.trabajo-portada-texto p { color:#f0f0f0; font-size:1.05rem; letter-spacing:.03em; }
+
+@media (max-width: 991.98px) {
+    .aficiones-layout { grid-template-columns:1fr 190px; }
+    .aficiones-grid { gap:1rem; }
+    .seccion-mi-trabajo { grid-template-columns:1fr 1fr; }
+    .trabajo-detalles { padding:3rem 2rem; }
+}
+@media (max-width: 767.98px) {
+    .seccion-aficiones { padding:3.5rem 0; }
+    .aficiones-layout { grid-template-columns:1fr; }
+    .aficiones-grid { grid-template-columns:1fr; gap:1.8rem; }
+    .encabezado-aficiones { margin-bottom:2rem; }
+    .aficion-item { display:grid; grid-template-columns:48px 1fr; column-gap:1rem; }
+    .aficion-item .aficion-icono { grid-row:span 2; margin:0; }
+    .aficion-item h2 { align-self:end; }
+    .aficiones-retrato { display:none; }
+    .seccion-mi-trabajo { grid-template-columns:1fr; }
+    .trabajo-detalles { padding:3rem 1.5rem; }
+    .trabajo-portada { min-height:360px; }
+    .trabajo-portada-texto h1 { font-size:2rem; }
+}
